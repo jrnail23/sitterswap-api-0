@@ -1,56 +1,33 @@
 {
-  "name": "sitterswap-js",
-  "version": "1.0.0",
+  "name": "sitterswap-api",
+  "version": "0.0.0",
   "description": "learning junk",
-  "main": "index.js",
   "dependencies": {
-    "@lanetix/make-store": "^1.0.3",
     "bluebird": "^3.0.5",
     "body-parser": "^1.14.1",
-    "bootstrap": "^3.3.5",
     "cors": "^2.7.1",
-    "events": "^1.1.0",
     "express": "^4.13.3",
-    "flux": "^2.1.1",
-    "http-as-promised": "^1.1.0",
-    "immutable": "^3.7.5",
-    "keymirror": "^0.1.1",
     "lodash": "^3.10.1",
-    "moment": "^2.10.6",
     "node-postgres-named": "^2.2.5",
-    "pg-connect": "^2.0.1",
-    "react": "^0.14.2",
-    "react-dom": "^0.14.2",
-    "react-router": "^1.0.0",
-    "request": "^2.67.0"
+    "pg-connect": "^2.0.1"
   },
   "devDependencies": {
     "babel": "^5.8.26",
-    "babel-eslint": "^4.1.5",
-    "babelify": "^6.4.0",
-    "browserify": "^12.0.1",
-    "gulp": "^3.9.0",
-    "gulp-concat": "^2.6.0",
-    "gulp-connect": "^2.2.0",
-    "gulp-open": "^1.0.0",
-    "gulp-standard": "^5.2.2",
-    "vinyl-source-stream": "^1.1.0"
+    "babel-eslint": "^4.1.5"
   },
   "scripts": {
-    "start-server": "supervisor -w src/server -n error -x babel-node src/server/app",
-    "start-client": "gulp",
-    "start": "npm run start-server & npm run start-client"
+    "start": "supervisor -w src/server -n error -x babel-node src/server/app"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/jrnail23/sitterswap-js.git"
+    "url": "git+https://github.com/jrnail23/sitterswap-api.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jrnail23/sitterswap-js/issues"
+    "url": "https://github.com/jrnail23/sitterswap-api/issues"
   },
-  "homepage": "https://github.com/jrnail23/sitterswap-js#readme",
+  "homepage": "https://github.com/jrnail23/sitterswap-api#readme",
   "babel": {
     "stage": 0
   },
@@ -63,16 +40,6 @@
       "afterEach",
       "it",
       "expect"
-    ]
-  },
-  "browserify": {
-    "transform": [
-      [
-        "babelify",
-        {
-          "stage": 0
-        }
-      ]
     ]
   }
 }
