@@ -3,25 +3,20 @@ import Bromise from 'bluebird'
 import getDbConnection from '../data'
 import url from 'url'
 
-const mapRowToMember = row => {
-  // TODO: use camelize to do this
-  return {
-    key: row.key,
-    firstName: row.first_name,
-    lastName: row.last_name,
-    emailAddress: row.email_address
-  }
-}
+const mapRowToMember = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address
+})
 
-const mapRowToActivity = row => {
-  return {
-    href: '/members/' + row.client + '/activities/' + row.id,
-    date: row.date,
-    sitter: row.sitter,
-    client: row.client,
-    points: row.points
-  }
-}
+const mapRowToActivity = row => ({
+  href: `/members/${row.client}/activities/${row.id}`,
+  date: row.date,
+  sitter: row.sitter,
+  client: row.client,
+  points: row.points
+})
 
 // TODO: pull data access out into service/repository, etc.
 export default () => {
