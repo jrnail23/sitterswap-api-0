@@ -10,6 +10,27 @@ const mapRowToMember = row => ({
   emailAddress: row.email_address
 })
 
+const mapRowToMember2 = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address
+})
+
+const mapRowToMember3 = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address
+})
+
+const mapRowToMember4 = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address
+})
+
 const mapRowToActivity = row => ({
   href: `/members/${row.client}/activities/${row.id}`,
   date: row.date,
