@@ -23,3 +23,21 @@ app.get('/', (req, res) => {
 app.listen(config.port, () => {
   console.log('sitterswap API is running on PORT: ' + config.port)
 })
+
+const mapRowToMember = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address,
+  somethingElse: "",
+  somethingElse2: ""
+})
+
+const mapRowToMember2 = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address,
+  somethingElse: "",
+  somethingElse2: ""
+})
