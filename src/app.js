@@ -41,3 +41,21 @@ const mapRowToMember2 = row => ({
   somethingElse: "",
   somethingElse2: ""
 })
+
+const mapRowToMember3 = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address,
+  somethingElse: "",
+  somethingElse2: ""
+})
+
+const mapRowToMember4 = row => ({
+  key: row.key,
+  firstName: row.first_name,
+  lastName: row.last_name,
+  emailAddress: row.email_address,
+  somethingElse: "",
+  somethingElse2: ""
+})
